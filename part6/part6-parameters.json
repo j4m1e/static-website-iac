@@ -4,6 +4,14 @@
         "ParameterValue": "INSERT_BUCKET_NAME" 
     },
     { 
+        "ParameterKey": "DomainName", 
+        "ParameterValue": "INSERT_DOMAIN_NAME" 
+    },
+    { 
+        "ParameterKey": "AcmCertificateArn", 
+        "ParameterValue": "INSERT_CERTIFICATE_ARN" 
+    },
+    { 
         "ParameterKey": "TagValue", 
         "ParameterValue": "INSERT_DOMAIN_NAME" 
     }
