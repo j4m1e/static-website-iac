@@ -5,6 +5,12 @@ Parameters:
   ExistingBucketName:
     Type: String
     Description: "Name of the existing S3 bucket to use as origin"
+  DomainName:
+    Type: String
+    Description: "The apex domain name (e.g., example.com)"
+  AcmCertificateArn:
+    Type: String
+    Description: "ARN of ACM certificate (must be in us-east-1)"
   TagValue:
     Type: String
     Description: "The tag value for the distribution"
@@ -27,6 +33,13 @@ Resources:
         Enabled: true
         PriceClass: PriceClass_100 # US, Canada, Europe (not Middle East) Edge Locations
         DefaultRootObject: index.html
+        Aliases:
+          - !Ref DomainName
+          - !Sub "www.${DomainName}"
+        ViewerCertificate:
+          AcmCertificateArn: !Ref AcmCertificateArn
+          MinimumProtocolVersion: TLSv1.2_2021
+          SslSupportMethod: sni-only
         Origins:
           - DomainName: !Sub "${ExistingBucketName}.s3.${AWS::Region}.amazonaws.com"
             Id: S3Origin
