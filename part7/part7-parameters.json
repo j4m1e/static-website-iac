@@ -1,0 +1,14 @@
+[
+    { 
+        "ParameterKey": "HostedZoneId", 
+        "ParameterValue": "INSERT_HOSTED_ZONE_ID" 
+    },
+    { 
+        "ParameterKey": "DomainName", 
+        "ParameterValue": "INSERT_DOMAIN_NAME" 
+    },
+    { 
+        "ParameterKey": "CloudFrontDomainName", 
+        "ParameterValue": "INSERT_CLOUDFRONT_DOMAIN_NAME" 
+    }
+]
