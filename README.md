@@ -6,3 +6,5 @@ AWS CloudFormation templates associated with [blog series](https://renegade.clou
 * Part 5. CloudFormation template to deploy the SSL certificates using ACM and the use of parameters.json
 * Part 6. CloudFormation template to deploy the CDN using CloudFront and the use of parameters.json
 * Part 7. CloudFormation template to deploy the DNS alias records and the use of parameters.json
+
+The repository also includes a `static-files` directory containing `index.html` and `error.html` for the static website content.
