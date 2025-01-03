@@ -1,0 +1,14 @@
+[
+  {
+    "ParameterKey": "DomainName",
+    "ParameterValue": "INSERT_DOMAIN_NAME"
+  },
+  {
+    "ParameterKey": "BucketName",
+    "ParameterValue": "INSERT_BUCKET_NAME"
+  },
+  {
+    "ParameterKey": "TagValue",
+    "ParameterValue": "INSERT_DOMAIN_NAME"
+  }
+]
